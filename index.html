@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>House of KOФI · cafeteria + coffee shop</title>
+<meta name="description" content="Kafa, matcha i peciva na dve adrese u Beogradu: Uroša Martinovića 15 i Luke Ćelovića Trebinjca 19. Svaki dan 07–23h.">
+<meta name="theme-color" content="#602D22">
+<link rel="icon" type="image/png" href="img/logo-cream.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="image" href="img/latte-pour.jpg" fetchpriority="high">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Barlow:ital,wght@0,500;0,600;0,700;1,500&family=Caveat:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@700;800&text=%D0%9A%D0%9E%D0%A4%D0%98&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,500,0,0&icon_names=ac_unit,add_circle,arrow_forward,call,close,coffee,eco,emoji_food_beverage,expand_more,laptop_mac,local_cafe,local_drink,local_parking,location_on,mail,menu,pets,schedule,takeout_dining,water_drop,wifi&display=block" rel="stylesheet">
+<style>
+html.lenis,html.lenis body{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!important}.lenis.lenis-stopped{overflow:hidden}
+body{margin:0;background:#2a140f;font-family:Barlow,sans-serif;color:#602D22;-webkit-font-smoothing:antialiased}
+a{color:#602D22}a:hover{color:#3d1b14}
+.noscroll{scrollbar-width:none}.noscroll::-webkit-scrollbar{display:none}
+@keyframes kmarq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes kmarqR{from{transform:translateX(-50%)}to{transform:translateX(0)}}
+@keyframes kspin{to{transform:rotate(360deg)}}
+@keyframes kfloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes kbob{0%,100%{transform:translateY(0) rotate(var(--r,0deg))}50%{transform:translateY(-6px) rotate(var(--r,0deg))}}
+@keyframes knudge{0%,100%{transform:translateX(0)}50%{transform:translateX(6px)}}
+.navlink:hover{color:#BBDD80!important}
+button:focus-visible,a:focus-visible{outline:3px solid #BBDD80;outline-offset:2px}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div style="max-width:440px;margin:0 auto;background:#FFF8E8;overflow-x:clip">
+
+<section id="top" style="position:relative;height:720px;overflow:hidden;background:#1d0f0b">
+<img fetchpriority="high" src="img/latte-pour.jpg" alt="Cappuccino" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+<div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(29,15,11,.55) 0%,rgba(29,15,11,0) 22%,rgba(29,15,11,0) 42%,rgba(29,15,11,.92) 82%)"></div>
+<div style="position:relative;display:flex;align-items:center;justify-content:space-between;padding:14px 18px">
+<img src="img/logo-cream.png" alt="House of KOФI" style="width:76px;height:58px;object-fit:cover;display:block">
+<div style="display:flex;align-items:center;gap:12px;color:#FFF8E8">
+<div style="display:flex;font:600 13px Barlow"><span style="padding:4px 8px;background:#FFF8E8;color:#602D22;border-radius:99px">SR</span><span style="padding:4px 8px">EN</span></div>
+<button type="button" id="navOpen" aria-label="Otvori meni" style="background:none;border:0;color:inherit;font-family:'Material Symbols Rounded';font-size:30px;line-height:1;cursor:pointer;padding:7px;margin:-7px">menu</button>
+</div>
+</div>
+<div style="position:absolute;right:16px;top:92px;width:116px;height:116px">
+<svg width="116" height="116" viewBox="0 0 100 100" style="position:absolute;inset:0;animation:kspin 14s linear infinite"><defs><path id="bdgHero" d="M50,50 m-37,0 a37,37 0 1,1 74,0 a37,37 0 1,1 -74,0"></path></defs><circle cx="50" cy="50" r="50" fill="#BBDD80"></circle><text fill="#602D22" style="font:700 10.5px 'Barlow Condensed','Fira Sans Extra Condensed';letter-spacing:0"><textPath href="#bdgHero" textLength="229" lengthAdjust="spacing">LUKE ĆELOVIĆA TREBINJCA 19 • BW • </textPath></text></svg>
+<div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;font:800 15px/0.95 'Barlow Condensed','Fira Sans Extra Condensed';letter-spacing:.04em;color:#602D22;text-align:center"><span>NOVA</span><span>LOKACIJA</span></div>
+</div>
+<div style="position:absolute;left:0;right:0;bottom:0;padding:0 18px 26px;display:flex;flex-direction:column;gap:14px;color:#FFF8E8">
+<span style="font:700 27px/1 Caveat;color:#BBDD80;transform:rotate(-4deg);transform-origin:left;width:max-content">dve adrese, ista kafa</span>
+<div style="font:800 66px/0.86 'Barlow Condensed','Fira Sans Extra Condensed';text-transform:uppercase;letter-spacing:-0.01em">Svrati<br>na kafu.</div>
+<div style="display:flex;flex-direction:column;gap:6px;font:600 15px Barlow">
+<div style="display:flex;align-items:center;gap:8px"><span style="font-family:'Material Symbols Rounded';font-size:20px;color:#BBDD80">location_on</span>Uroša Martinovića 15</div>
+<div style="display:flex;align-items:center;gap:8px"><span style="font-family:'Material Symbols Rounded';font-size:20px;color:#BBDD80">location_on</span>Luke Ćelovića Trebinjca 19<span style="padding:2px 8px;background:#BBDD80;color:#602D22;border-radius:99px;font:800 12px 'Barlow Condensed','Fira Sans Extra Condensed';letter-spacing:.06em">NOVO</span></div>
+</div>
+<div style="display:flex;gap:10px">
+<a href="#lokacije" style="flex:1;text-align:center;padding:14px 0;background:#FFF8E8;color:#602D22;border-radius:99px;font:700 16px Barlow;text-decoration:none">Poseti nas</a>
+<a href="#meni" style="flex:1;text-align:center;padding:12px 0;border:2px solid #FFF8E8;color:#FFF8E8;border-radius:99px;font:700 16px Barlow;text-decoration:none">Pogledaj meni</a>
+</div>
+<div style="display:flex;justify-content:space-between;padding-top:4px;font:600 13px Barlow;margin:0 -1px 0 -3px">
+<span style="display:flex;align-items:center;gap:5px"><span style="font-family:'Material Symbols Rounded';font-size:19px">schedule</span>07–23h</span>
+<span style="display:flex;align-items:center;gap:5px"><span style="font-family:'Material Symbols Rounded';font-size:19px">pets</span>pet-friendly</span>
+<span style="display:flex;align-items:center;gap:5px"><span style="font-family:'Material Symbols Rounded';font-size:19px">laptop_mac</span>laptop-friendly</span>
+</div>
+</div>
+</section>
+
+<section id="o-nama" style="background:#602D22;color:#FFF8E8;padding:44px 18px 40px">
+<div data-reveal="" style="font:800 52px/0.88 'Barlow Condensed','Fira Sans Extra Condensed';text-transform:uppercase">O nama</div>
+<div style="position:relative;height:340px;margin-top:16px">
+<img loading="lazy" decoding="async" src="img/latte-pour.jpg" alt="Barista" style="position:absolute;left:0;top:0;width:59%;height:290px;object-fit:cover;border-radius:18px">
+<div style="position:absolute;left:50%;right:0;top:110px;height:210px;box-sizing:border-box;border-radius:18px;border:4px solid #602D22;display:flex;align-items:center;justify-content:center;text-align:center;background:repeating-linear-gradient(135deg,#6e3a2e 0 8px,#7a4436 8px 16px);font:500 11px ui-monospace,Menlo,monospace;color:#FFF8E8">fotka: ekipa</div>
+<span style="position:absolute;right:20px;top:40px;font:700 26px/1 Caveat;color:#BBDD80;transform:rotate(8deg)">ovo smo mi</span>
+</div>
+<div style="height:96px;border-radius:14px;display:flex;align-items:center;justify-content:center;background:repeating-linear-gradient(135deg,#6e3a2e 0 8px,#7a4436 8px 16px);font:500 11px ui-monospace,Menlo,monospace">tekst priče: 2–3 rečenice</div>
+</section>
+
+<section id="utisci" style="background:#FFF8E8;padding:20px 18px 44px">
+<div data-reveal="" style="font:800 46px/0.88 'Barlow Condensed','Fira Sans Extra Condensed';text-transform:uppercase;padding-top:24px">Gosti kažu</div>
+<div style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px;margin-top:18px">
+<div style="background:#602D22;color:#FFF8E8;border-radius:16px;padding:14px;display:flex;flex-direction:column;gap:8px;transform:rotate(-3deg)"><span style="color:#BBDD80;letter-spacing:2px">★★★★★</span><span style="font:500 13.5px/1.35 Barlow">Utisak gosta sa Google-a stiže ovde.</span><span style="font:700 12px Barlow">Ime gosta</span></div>
+<img loading="lazy" decoding="async" src="img/latte-pour.jpg" alt="" style="width:100%;height:150px;object-fit:cover;border-radius:16px;transform:rotate(3deg)">
+<img loading="lazy" decoding="async" src="img/kroasan.jpg" alt="" style="width:100%;height:150px;object-fit:cover;border-radius:16px;transform:rotate(-2deg)">
+<div style="background:#BBDD80;border-radius:16px;padding:14px;display:flex;flex-direction:column;gap:8px;transform:rotate(3deg)"><span style="letter-spacing:2px">★★★★★</span><span style="font:500 13.5px/1.35 Barlow">Utisak gosta sa Google-a stiže ovde.</span><span style="font:700 12px Barlow">Ime gosta</span></div>
+<div style="background:#602D22;color:#FFF8E8;border-radius:16px;padding:14px;display:flex;flex-direction:column;gap:8px;transform:rotate(-2deg)"><span style="color:#BBDD80;letter-spacing:2px">★★★★★</span><span style="font:500 13.5px/1.35 Barlow">Utisak gosta sa Google-a stiže ovde.</span><span style="font:700 12px Barlow">Ime gosta</span></div>
+<img loading="lazy" decoding="async" src="img/zrno.jpg" alt="" style="width:100%;height:150px;object-fit:cover;border-radius:16px;transform:rotate(2deg)">
+</div>
+</section>
+
+<section id="blend" style="background:#602D22;color:#FFF8E8;padding:44px 0 40px">
+<div data-reveal="" style="padding:0 18px;display:flex;justify-content:space-between;align-items:flex-end;gap:12px">
+<div style="font:800 52px/0.88 'Barlow Condensed','Fira Sans Extra Condensed';text-transform:uppercase;white-space:nowrap">Naš blend</div>
+<div style="display:flex;align-items:center;gap:4px;padding-bottom:6px;color:#BBDD80;animation:knudge 1.8s ease-in-out infinite">
+<span style="font:700 20px/1 Caveat">prevuci</span>
+<svg width="28" height="16" viewBox="0 0 28 16"><path d="M2 9 C 9 5, 16 11, 24 7" fill="none" stroke="#BBDD80" style="stroke-width:2;stroke-linecap:round"></path><path d="M19 3 L25 7 L19 12" fill="none" stroke="#BBDD80" style="stroke-width:2;stroke-linecap:round;stroke-linejoin:round"></path></svg>
+</div>
+</div>
+<div style="padding:4px 18px 0;font:700 20px/1 Caveat">Java Coffee · specialty roasters</div>
+<div class="noscroll" style="display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:18px 0 4px 18px;scroll-padding-inline:18px">
+<div style="flex:none;width:300px;scroll-snap-align:start;background:#FFF8E8;color:#602D22;border-radius:24px;overflow:hidden">
+<img loading="lazy" decoding="async" src="img/blend-1.jpg" alt="Colombia" style="width:100%;height:170px;object-fit:cover;display:block">
+<div style="padding:16px 18px 18px;display:flex;flex-direction:column;gap:12px">
+<div><div style="font:800 38px/0.9 'Barlow Condensed','Fira Sans Extra Condensed'">COLOMBIA</div><div style="font:italic 500 15px Barlow">Excelso ep Medelin · single origin</div></div>
+<div style="display:grid;grid-template-columns:70px 1fr;row-gap:8px;align-items:center;font:700 13px Barlow;letter-spacing:.08em">
+<span>TELO</span><div style="display:flex;gap:4px"><span style="flex:1;height:10px;border-radius:5px;background:#602D22"></span><span style="flex:1;height:10px;border-radius:5px;background:#602D22"></span><span style="flex:1;height:10px;border-radius:5px;background:#602D22"></span></div>
+<span>PRŽENJE</span><div style="display:flex;gap:4px"><span style="flex:1;height:10px;border-radius:5px;background:#602D22"></span><span style="flex:1;height:10px;border-radius:5px;background:#602D22"></span><span style="flex:1;height:10px;border-radius:5px;border:2px solid #602D22;box-sizing:border-box"></span></div>
+</div>
+<div style="display:flex;gap:6px;flex-wrap:wrap"><span style="padding:5px 11px;border-radius:99px;background:#BBDD80;font:600 13px Barlow">slad</span><span style="padding:5px 11px;border-radius:99px;background:#BBDD80;font:600 13px Barlow">karamela</span><span style="padding:5px 11px;border-radius:99px;background:#BBDD80;font:600 13px Barlow">orašasti plod</span></div>
+<div style="display:flex;justify-content:space-between;gap:6px;padding-top:10px;border-top:1px solid rgba(96,45,34,.25);font:500 13px Barlow">
+<span style="display:flex;align-items:center;gap:4px"><span style="font-family:'Material Symbols Rounded';font-size:18px">location_on</span>Huila</span>
+<span style="display:flex;align-items:center;gap:4px"><span style="font-family:'Material Symbols Rounded';font-size:18px">water_drop</span>Washed</span>
+<span style="display:flex;align-items:center;gap:4px"><span style="font-family:'Material Symbols Rounded';font-size:18px">eco</span>Caturra</span>
+</div>
+</div>
+</div>
+<div style="flex:none;width:300px;scroll-snap-align:end;background:#BBDD80;color:#602D22;border-radius:24px;overflow:hidden">
+<img loading="lazy" decoding="async" src="img/blend-1.jpg" alt="Blend 007" style="width:100%;height:170px;object-fit:cover;display:block">
+<div style="padding:16px 18px 18px;display:flex;flex-direction:column;gap:12px">
+<div><div style="font:800 38px/0.9 'Barlow Condensed','Fira Sans Extra Condensed'">BLEND 007</div><div style="font:italic 500 15px Barlow">Brasil &amp; India · 2 vrste arabike</div></div>
+<div style="display:grid;grid-template-columns:70px 1fr;row-gap:8px;align-items:center;font:700 13px Barlow;letter-spacing:.08em">
+<span>TELO</span><div style="display:flex;gap:4px"><span style="flex:1;height:10px;border-radius:5px;background:#602D22"></span><span style="flex:1;height:10px;border-radius:5px;background:#602D22"></span><span style="flex:1;height:10px;border-radius:5px;border:2px solid #602D22;box-sizing:border-box"></span></div>
+<span>PRŽENJE</span><div style="display:flex;gap:4px"><span style="flex:1;height:10px;border-radius:5px;background:#602D22"></span><span style="flex:1;height:10px;border-radius:5px;background:#602D22"></span><span style="flex:1;height:10px;border-radius:5px;border:2px solid #602D22;box-sizing:border-box"></span></div>
+</div>
+<div style="display:flex;gap:6px;flex-wrap:wrap"><span style="padding:5px 11px;border-radius:99px;background:#FFF8E8;font:600 13px Barlow">mlečna čokolada</span><span style="padding:5px 11px;border-radius:99px;background:#FFF8E8;font:600 13px Barlow">karamela</span><span style="padding:5px 11px;border-radius:99px;background:#FFF8E8;font:600 13px Barlow">višnja</span><span style="padding:5px 11px;border-radius:99px;background:#FFF8E8;font:600 13px Barlow">pečeni kikiriki</span></div>
+<div style="display:flex;justify-content:space-between;gap:6px;padding-top:10px;border-top:1px solid rgba(96,45,34,.25);font:500 13px Barlow">
+<span style="display:flex;align-items:center;gap:4px"><span style="font-family:'Material Symbols Rounded';font-size:18px">location_on</span>Santos, Malabar</span>
+<span style="display:flex;align-items:center;gap:4px"><span style="font-family:'Material Symbols Rounded';font-size:18px">water_drop</span>Washed, Natural</span>
+</div>
+</div>
+</div>
+<div style="flex:none;width:6px"></div>
+</div>
+</section>
+
+<section id="meni" style="background:#FFF8E8;padding:44px 0 40px;scroll-margin-top:0">
+<div data-reveal="" style="display:flex;align-items:flex-end;justify-content:space-between;padding:0 18px">
+<div style="font:800 64px/0.85 'Barlow Condensed','Fira Sans Extra Condensed'">MENI</div>
+<span style="font:700 22px/1 Caveat;transform:rotate(-5deg);padding-bottom:6px">cene u dinarima</span>
+</div>
+<div id="menuTabs" role="tablist" class="noscroll" style="display:flex;gap:6px;overflow-x:auto;padding:18px 18px 6px">
+<button type="button" role="tab" data-i="0" aria-selected="true" style="flex:none;width:78px;box-sizing:border-box;display:flex;flex-direction:column;align-items:center;gap:4px;padding:10px 2px 8px;border-radius:14px;border:2px solid #602D22;cursor:pointer;font:inherit;background:#602D22;color:#FFF8E8"><span style="font-family:'Material Symbols Rounded';font-size:24px;line-height:1">coffee</span><span style="font:700 12.5px 'Barlow Condensed','Fira Sans Extra Condensed';letter-spacing:.04em;text-transform:uppercase;white-space:nowrap">Kafa</span></button>
+<button type="button" role="tab" data-i="1" aria-selected="false" style="flex:none;width:78px;box-sizing:border-box;display:flex;flex-direction:column;align-items:center;gap:4px;padding:10px 2px 8px;border-radius:14px;border:2px solid #602D22;cursor:pointer;font:inherit;background:transparent;color:#602D22"><span style="font-family:'Material Symbols Rounded';font-size:24px;line-height:1">ac_unit</span><span style="font:700 12.5px 'Barlow Condensed','Fira Sans Extra Condensed';letter-spacing:.04em;text-transform:uppercase;white-space:nowrap">Ice</span></button>
+<button type="button" role="tab" data-i="2" aria-selected="false" style="flex:none;width:78px;box-sizing:border-box;display:flex;flex-direction:column;align-items:center;gap:4px;padding:10px 2px 8px;border-radius:14px;border:2px solid #602D22;cursor:pointer;font:inherit;background:transparent;color:#602D22"><span style="font-family:'Material Symbols Rounded';font-size:24px;line-height:1">eco</span><span style="font:700 12.5px 'Barlow Condensed','Fira Sans Extra Condensed';letter-spacing:.04em;text-transform:uppercase;white-space:nowrap">Matcha</span></button>
+<button type="button" role="tab" data-i="3" aria-selected="false" style="flex:none;width:78px;box-sizing:border-box;display:flex;flex-direction:column;align-items:center;gap:4px;padding:10px 2px 8px;border-radius:14px;border:2px solid #602D22;cursor:pointer;font:inherit;background:transparent;color:#602D22"><span style="font-family:'Material Symbols Rounded';font-size:24px;line-height:1">emoji_food_beverage</span><span style="font:700 12.5px 'Barlow Condensed','Fira Sans Extra Condensed';letter-spacing:.04em;text-transform:uppercase;white-space:nowrap">Čajevi</span></button>
+<button type="button" role="tab" data-i="4" aria-selected="false" style="flex:none;width:78px;box-sizing:border-box;display:flex;flex-direction:column;align-items:center;gap:4px;padding:10px 2px 8px;border-radius:14px;border:2px solid #602D22;cursor:pointer;font:inherit;background:transparent;color:#602D22"><span style="font-family:'Material Symbols Rounded';font-size:24px;line-height:1">local_drink</span><span style="font:700 12.5px 'Barlow Condensed','Fira Sans Extra Condensed';letter-spacing:.04em;text-transform:uppercase;white-space:nowrap">Osveženje</span></button>
+<button type="button" role="tab" data-i="5" aria-selected="false" style="flex:none;width:78px;box-sizing:border-box;display:flex;flex-direction:column;align-items:center;gap:4px;padding:10px 2px 8px;border-radius:14px;border:2px solid #602D22;cursor:pointer;font:inherit;background:transparent;color:#602D22"><span style="font-family:'Material Symbols Rounded';font-size:24px;line-height:1">local_cafe</span><span style="font:700 12.5px 'Barlow Condensed','Fira Sans Extra Condensed';letter-spacing:.04em;text-transform:uppercase;white-space:nowrap">Ostalo</span></button>
+<button type="button" role="tab" data-i="6" aria-selected="false" style="flex:none;width:78px;box-sizing:border-box;display:flex;flex-direction:column;align-items:center;gap:4px;padding:10px 2px 8px;border-radius:14px;border:2px solid #602D22;cursor:pointer;font:inherit;background:transparent;color:#602D22"><span style="font-family:'Material Symbols Rounded';font-size:24px;line-height:1">add_circle</span><span style="font:700 12.5px 'Barlow Condensed','Fira Sans Extra Condensed';letter-spacing:.04em;text-transform:uppercase;white-space:nowrap">Dodaci</span></button>
+</div>
+<div style="display:flex;flex-direction:column;gap:18px;padding:16px 18px 0">
+<div data-panel="0" role="tabpanel" style="flex-direction:column;gap:18px;display:flex">
+<div style="display:flex;flex-direction:column;gap:9px">
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Espresso</span><span style="font:500 12px Barlow">25 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">255</span></div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Americano</span><span style="font:500 12px Barlow">180 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">255</span></div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Lungo</span><span style="font:500 12px Barlow">50 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">255</span></div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Ristretto</span><span style="font:500 12px Barlow">15 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">255</span></div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Doppio</span><span style="font:500 12px Barlow">55 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">340</span></div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Macchiato</span><span style="font:500 12px Barlow">80 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">270</span></div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Cappuccino</span><span style="font:500 12px Barlow">200 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">305</span></div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Cappuccino XL</span><span style="font:500 12px Barlow">250 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">355</span></div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Flat white</span><span style="font:500 12px Barlow">250 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">390</span></div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Raf</span><span style="font:500 12px Barlow">250 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">415</span></div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Espresso tonic</span><span style="font:500 12px Barlow">300 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">380</span></div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Caffe latte</span><span style="font:500 12px Barlow">250 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">340</span></div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Cream caffe latte</span><span style="font:500 12px Barlow">250 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">400</span></div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Mocca</span><span style="font:500 12px Barlow">250 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">405</span></div><div style="font:italic 500 13px/1.3 Barlow">Čokolada, karamela, bela čokolada</div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Domaća kafa</span><span style="font:500 12px Barlow">200 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">300</span></div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Pumpkin spice latte</span><span style="font:500 12px Barlow">300 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">405</span></div></div>
+</div>
+</div>
+<div data-panel="1" role="tabpanel" hidden style="flex-direction:column;gap:18px;display:none">
+<div style="display:flex;flex-direction:column;gap:9px">
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Ice coffee</span><span style="font:500 12px Barlow">300 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">400</span></div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Ice mocca</span><span style="font:500 12px Barlow">300 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">445</span></div><div style="font:italic 500 13px/1.3 Barlow">Čokolada, karamela</div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Iced latte</span><span style="font:500 12px Barlow">300 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">425</span></div><div style="font:italic 500 13px/1.3 Barlow">Čokolada, karamela</div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Iced raf karamela</span><span style="font:500 12px Barlow">300 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">465</span></div></div>
+</div>
+</div>
+<div data-panel="2" role="tabpanel" hidden style="flex-direction:column;gap:18px;display:none">
+<div style="display:flex;flex-direction:column;gap:9px">
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Matcha latte</span><span style="font:500 12px Barlow">250 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">380</span></div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Iced matcha latte</span><span style="font:500 12px Barlow">300 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">430</span></div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Strawberry matcha</span><span style="font:500 12px Barlow">300 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">470</span></div></div>
+</div>
+</div>
+<div data-panel="3" role="tabpanel" hidden style="flex-direction:column;gap:18px;display:none">
+<div style="display:flex;flex-direction:column;gap:9px">
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Flower Magic</span><span style="font:500 12px Barlow">200 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">315</span></div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Detoxicate Me</span><span style="font:500 12px Barlow">200 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">315</span></div><div style="font:italic 500 13px/1.3 Barlow">Zeleni čaj</div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Dark Madness</span><span style="font:500 12px Barlow">200 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">315</span></div><div style="font:italic 500 13px/1.3 Barlow">Crni čaj</div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Funky Madness</span><span style="font:500 12px Barlow">200 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">315</span></div><div style="font:italic 500 13px/1.3 Barlow">Zeleni čaj, kora narandže, hibiskus</div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Gari</span><span style="font:500 12px Barlow">200 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">315</span></div><div style="font:italic 500 13px/1.3 Barlow">Nana, kamilica, matičnjak, zova, neven, crni slez</div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Glog It</span><span style="font:500 12px Barlow">200 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">315</span></div><div style="font:italic 500 13px/1.3 Barlow">Rtanjski čaj, majčina dušica, kantarion, hibiskus, glog, timijan</div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Granny</span><span style="font:500 12px Barlow">200 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">315</span></div><div style="font:italic 500 13px/1.3 Barlow">Nana</div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Little Camel</span><span style="font:500 12px Barlow">200 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">315</span></div><div style="font:italic 500 13px/1.3 Barlow">Cvet kamilice</div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Pure Madness</span><span style="font:500 12px Barlow">200 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">315</span></div><div style="font:italic 500 13px/1.3 Barlow">Cvet hibiskusa</div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Wild Madness</span><span style="font:500 12px Barlow">200 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">315</span></div><div style="font:italic 500 13px/1.3 Barlow">Nana, divlja jabuka, kopriva, šipak, hibiskus</div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Red Madness</span><span style="font:500 12px Barlow">200 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">315</span></div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Milky Oolong</span><span style="font:500 12px Barlow">200 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">315</span></div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Zdravko</span><span style="font:500 12px Barlow">200 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">315</span></div><div style="font:italic 500 13px/1.3 Barlow">Hibiskus, crni slez, neven, kamilica, nana, lipa</div></div>
+</div>
+</div>
+<div data-panel="4" role="tabpanel" hidden style="flex-direction:column;gap:18px;display:none">
+<div style="display:flex;flex-direction:column;gap:9px"><div style="font:700 22px/1 Caveat">Limunade</div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Malina</span><span style="font:500 12px Barlow">350 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">325</span></div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Marakuja</span><span style="font:500 12px Barlow">350 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">325</span></div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Breskva</span><span style="font:500 12px Barlow">350 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">325</span></div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Kivi</span><span style="font:500 12px Barlow">350 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">325</span></div></div>
+</div>
+<div style="display:flex;flex-direction:column;gap:9px"><div style="font:700 22px/1 Caveat">Homemade ice tea</div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Breskva</span><span style="font:500 12px Barlow">350 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">355</span></div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Malina</span><span style="font:500 12px Barlow">350 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">355</span></div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Marakuja</span><span style="font:500 12px Barlow">350 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">355</span></div></div>
+</div>
+<div style="display:flex;flex-direction:column;gap:9px"><div style="font:700 22px/1 Caveat">Hladno ceđeni</div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">100% pomorandža</span><span style="font:500 12px Barlow">250 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">405</span></div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">100% jabuka greni smit</span><span style="font:500 12px Barlow">250 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">405</span></div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Ananas, jabuka, nana</span><span style="font:500 12px Barlow">250 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">405</span></div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Malina smoothie</span><span style="font:500 12px Barlow">250 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">405</span></div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Citrus mix</span><span style="font:500 12px Barlow">250 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">405</span></div></div>
+</div>
+<div style="display:flex;flex-direction:column;gap:9px"><div style="font:700 22px/1 Caveat">Boosteri</div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Beauty</span><span style="font:500 12px Barlow">200 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">390</span></div><div style="font:italic 500 13px/1.3 Barlow">Kolagen i aloe vera</div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Energy</span><span style="font:500 12px Barlow">200 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">390</span></div><div style="font:italic 500 13px/1.3 Barlow">Jabuka, đumbir, limun, ženšen, guarana</div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Relax</span><span style="font:500 12px Barlow">200 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">390</span></div><div style="font:italic 500 13px/1.3 Barlow">Zeleni čaj, hmelj, matičnjak</div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Defence</span><span style="font:500 12px Barlow">200 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">390</span></div><div style="font:italic 500 13px/1.3 Barlow">Zeleni čaj</div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Power</span><span style="font:500 12px Barlow">200 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">390</span></div><div style="font:italic 500 13px/1.3 Barlow">Aronija, jabuka, grožđe, malina, višnja, ribizla, hibiskus</div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Detox</span><span style="font:500 12px Barlow">200 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">390</span></div><div style="font:italic 500 13px/1.3 Barlow">Šljiva, jabuka, aronija, lincura</div></div>
+</div>
+<div style="display:flex;flex-direction:column;gap:9px"><div style="font:700 22px/1 Caveat">Negazirani</div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Prirodno N°1</span><span style="font:500 12px Barlow">200 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">325</span></div><div style="font:italic 500 13px/1.3 Barlow">Borovnica, višnja, kupina, malina, jagoda, šumski mix</div></div>
+</div>
+</div>
+<div data-panel="5" role="tabpanel" hidden style="flex-direction:column;gap:18px;display:none">
+<div style="display:flex;flex-direction:column;gap:9px"><div style="font:700 22px/1 Caveat">Topla čokolada</div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Mlečna</span><span style="font:500 12px Barlow">300 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">395</span></div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Bela</span><span style="font:500 12px Barlow">300 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">395</span></div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Lešnik</span><span style="font:500 12px Barlow">300 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">395</span></div></div>
+</div>
+<div style="display:flex;flex-direction:column;gap:9px"><div style="font:700 22px/1 Caveat">Šejk</div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Plazma</span><span style="font:500 12px Barlow">300 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">440</span></div></div>
+</div>
+<div style="display:flex;flex-direction:column;gap:9px"><div style="font:700 22px/1 Caveat">Voda</div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Rosa</span><span style="font:500 12px Barlow">330 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">255</span></div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Knjaz Miloš</span><span style="font:500 12px Barlow">250 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">255</span></div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Römerquelle</span><span style="font:500 12px Barlow">330 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">310</span></div><div style="font:italic 500 13px/1.3 Barlow">Limunska trava</div></div>
+</div>
+<div style="display:flex;flex-direction:column;gap:9px"><div style="font:700 22px/1 Caveat">Gazirani</div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Coca-Cola</span><span style="font:500 12px Barlow">250 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">315</span></div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Coca-Cola Zero</span><span style="font:500 12px Barlow">250 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">315</span></div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Fanta</span><span style="font:500 12px Barlow">250 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">315</span></div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Sprite</span><span style="font:500 12px Barlow">250 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">315</span></div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Schweppes Bitter</span><span style="font:500 12px Barlow">250 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">315</span></div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Schweppes Tonic</span><span style="font:500 12px Barlow">250 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">315</span></div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Red Bull</span><span style="font:500 12px Barlow">250 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">460</span></div></div>
+</div>
+<div style="display:flex;flex-direction:column;gap:9px"><div style="font:700 22px/1 Caveat">Alkohol</div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Heineken</span><span style="font:500 12px Barlow">250 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">380</span></div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Rakija Jelički dukat</span><span style="font:500 12px Barlow">30 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">420</span></div></div>
+</div>
+</div>
+<div data-panel="6" role="tabpanel" hidden style="flex-direction:column;gap:18px;display:none">
+<div style="display:flex;flex-direction:column;gap:9px"><div style="font:700 22px/1 Caveat">Biljno mleko</div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Bademovo</span><span style="font:500 12px Barlow">20 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">80</span></div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Sojino</span><span style="font:500 12px Barlow">20 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">80</span></div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Graškovo</span><span style="font:500 12px Barlow">20 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">80</span></div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Ovseno</span><span style="font:500 12px Barlow">20 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">80</span></div></div>
+</div>
+<div style="display:flex;flex-direction:column;gap:9px"><div style="font:700 22px/1 Caveat">Monin sirup</div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Čoko kolač</span><span style="font:500 12px Barlow">20 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">80</span></div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Vanila</span><span style="font:500 12px Barlow">20 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">80</span></div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Pečen lešnik</span><span style="font:500 12px Barlow">20 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">80</span></div></div>
+<div style="display:flex;flex-direction:column;gap:1px"><div style="display:flex;align-items:baseline;gap:6px"><span style="font:600 15px Barlow;text-transform:uppercase;letter-spacing:.02em">Slana karamela</span><span style="font:500 12px Barlow">20 ml</span><span style="flex:1;border-bottom:2px dotted #602D22;transform:translateY(-4px)"></span><span style="font:700 16px Barlow">80</span></div></div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="hrana" style="position:relative;overflow:hidden;background:#1d0f0b;padding:44px 18px 48px">
+<img loading="lazy" decoding="async" src="img/kroasan.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+<div style="position:absolute;inset:0;background:rgba(29,15,11,.74)"></div>
+<div data-reveal="" style="position:relative;display:flex;flex-direction:column;gap:2px;color:#FFF8E8">
+<div style="font:800 52px/0.88 'Barlow Condensed','Fira Sans Extra Condensed';text-transform:uppercase">Uz kafu</div>
+<span style="font:700 22px/1 Caveat;color:#BBDD80">slano &amp; slatko</span>
+</div>
+<div style="position:relative;height:480px;margin-top:18px">
+<div style="position:absolute;left:0;top:0;width:220px;background:#fff;padding:8px 8px 34px;border-radius:6px;box-shadow:0 14px 30px rgba(0,0,0,.4);--r:-5deg;animation:kbob 6s ease-in-out infinite">
+<img loading="lazy" decoding="async" src="img/kroasan.jpg" alt="Kroasan" style="width:100%;height:230px;object-fit:cover;border-radius:3px;display:block">
+<span style="position:absolute;left:12px;bottom:6px;font:700 22px Caveat">slani kroasan</span>
+</div>
+<div style="position:absolute;right:0;top:120px;width:170px;background:#fff;padding:8px 8px 34px;border-radius:6px;box-shadow:0 14px 30px rgba(0,0,0,.4);--r:6deg;animation:kbob 7s ease-in-out infinite">
+<img loading="lazy" decoding="async" src="img/slatko.jpg" alt="Slatko" style="width:100%;height:170px;object-fit:cover;border-radius:3px;display:block">
+<span style="position:absolute;left:12px;bottom:6px;font:700 22px Caveat">nešto slatko</span>
+</div>
+<div style="position:absolute;left:10px;top:345px;width:190px;background:#fff;padding:8px 8px 34px;border-radius:6px;box-shadow:0 14px 30px rgba(0,0,0,.4);--r:3deg;animation:kbob 5.5s ease-in-out infinite">
+<img loading="lazy" decoding="async" src="img/dorucak.jpg" alt="Doručak" style="width:100%;height:100px;object-fit:cover;border-radius:3px;display:block">
+<span style="position:absolute;left:12px;bottom:6px;font:700 22px Caveat">za doručak</span>
+</div>
+</div>
+</section>
+
+<section id="lokacije" style="background:#FFF8E8;padding:44px 18px 40px">
+<div data-reveal="" style="font:800 52px/0.88 'Barlow Condensed','Fira Sans Extra Condensed';text-transform:uppercase">Naše lokacije</div>
+<div id="locTabs" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px;margin-top:18px">
+<button type="button" data-map="https://maps.google.com/maps?q=Luke%20%C4%86elovi%C4%87a%20Trebinjca%2019%2C%20Beograd&amp;z=15&amp;output=embed" data-nav="https://www.google.com/maps/dir/?api=1&amp;destination=Luke+%C4%86elovi%C4%87a+Trebinjca+19+Beograd" data-name="Luke Ćelovića Trebinjca 19" data-note="Beograd na vodi" aria-pressed="true" style="position:relative;cursor:pointer;padding:14px 12px;border-radius:16px;border:2px dashed #602D22;font:inherit;text-align:left;background:#602D22;color:#FFF8E8;display:flex;flex-direction:column;gap:4px"><span style="font:800 26px/0.92 'Barlow Condensed','Fira Sans Extra Condensed';text-transform:uppercase">Beograd na vodi</span><span style="font:600 12px/1.25 Barlow">Luke Ćelovića Trebinjca 19</span><span style="position:absolute;right:-6px;top:-10px;padding:3px 9px;background:#BBDD80;color:#602D22;border:2px solid #602D22;border-radius:99px;font:800 12px 'Barlow Condensed','Fira Sans Extra Condensed';letter-spacing:.08em;transform:rotate(6deg)">NOVO</span></button>
+<button type="button" data-map="https://maps.google.com/maps?q=Uro%C5%A1a%20Martinovi%C4%87a%2015%2C%20Beograd&amp;z=15&amp;output=embed" data-nav="https://www.google.com/maps/dir/?api=1&amp;destination=Uro%C5%A1a+Martinovi%C4%87a+15+Beograd" data-name="Uroša Martinovića 15" data-note="Novi Beograd" aria-pressed="false" style="position:relative;cursor:pointer;padding:14px 12px;border-radius:16px;border:2px dashed #602D22;font:inherit;text-align:left;background:#FFF8E8;color:#602D22;display:flex;flex-direction:column;gap:4px"><span style="font:800 26px/0.92 'Barlow Condensed','Fira Sans Extra Condensed';text-transform:uppercase">Novi Beograd</span><span style="font:600 12px/1.25 Barlow">Uroša Martinovića 15</span></button>
+</div>
+<div style="margin-top:12px;height:260px;border-radius:20px;overflow:hidden;border:3px solid #602D22"><iframe title="Mapa" id="locMap" src="https://maps.google.com/maps?q=Luke%20%C4%86elovi%C4%87a%20Trebinjca%2019%2C%20Beograd&amp;z=15&amp;output=embed" style="width:100%;height:calc(100% + 180px);margin-top:-90px;border:0;display:block" loading="lazy"></iframe></div>
+<div style="display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:14px">
+<div style="display:flex;flex-direction:column;gap:2px"><span style="font:800 24px/1 'Barlow Condensed','Fira Sans Extra Condensed'" id="locName">Luke Ćelovića Trebinjca 19</span><span style="font:600 14px Barlow" id="locNote">Beograd na vodi</span></div>
+<a id="locNav" href="https://www.google.com/maps/dir/?api=1&amp;destination=Luke+%C4%86elovi%C4%87a+Trebinjca+19+Beograd" rel="noopener" target="_blank" rel="noopener" style="flex:none;display:flex;align-items:center;gap:6px;padding:12px 16px 12px 20px;background:#602D22;color:#FFF8E8;border-radius:99px;font:700 15px Barlow;text-decoration:none">Dođi do nas<span style="font-family:'Material Symbols Rounded';font-size:20px">arrow_forward</span></a>
+</div>
+</section>
+
+<section id="instagram" style="background:#602D22;color:#FFF8E8;padding:44px 0 48px;text-align:center;overflow:hidden">
+<div data-reveal="" style="padding:0 18px;font:800 44px/0.9 'Barlow Condensed','Fira Sans Extra Condensed'">@houseof.kofi</div>
+<div style="position:relative;height:330px;margin-top:20px">
+<div style="position:absolute;left:50%;top:20px;width:180px;height:240px;margin-left:-170px;transform:rotate(-12deg);border-radius:18px;border:5px solid #FFF8E8;overflow:hidden;box-shadow:0 12px 26px rgba(0,0,0,.3)"><img loading="lazy" decoding="async" src="img/zrno.jpg" alt="" style="width:100%;height:100%;object-fit:cover"></div>
+<div style="position:absolute;left:50%;top:20px;width:180px;height:240px;margin-left:-10px;transform:rotate(12deg);border-radius:18px;border:5px solid #FFF8E8;overflow:hidden;box-shadow:0 12px 26px rgba(0,0,0,.3)"><img loading="lazy" decoding="async" src="img/kroasan.jpg" alt="" style="width:100%;height:100%;object-fit:cover"></div>
+<div style="position:absolute;left:50%;top:0;width:190px;height:260px;margin-left:-95px;border-radius:18px;border:5px solid #FFF8E8;overflow:hidden;box-shadow:0 16px 30px rgba(0,0,0,.35);animation:kfloat 5s ease-in-out infinite"><img loading="lazy" decoding="async" src="img/latte-pour.jpg" alt="" style="width:100%;height:100%;object-fit:cover"></div>
+</div>
+<div style="display:flex;align-items:center;justify-content:center;gap:10px;padding:0 18px">
+<span style="font:700 24px/1 Caveat;transform:rotate(-6deg);color:#FFF8E8">još ovoga →</span>
+<a href="https://www.instagram.com/houseof.kofi/" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;gap:8px;padding:12px 22px 12px 18px;line-height:1;background:#FFF8E8;color:#602D22;border-radius:99px;font:700 16px Barlow;text-decoration:none"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#602D22" style="stroke-width:2;display:block;flex:none"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4.2"></circle><circle cx="17.4" cy="6.6" r="1.1" fill="#602D22" stroke="none"></circle></svg>Zaprati nas</a>
+</div>
+<div style="display:flex;flex-direction:column;gap:10px;margin-top:40px;transform:rotate(-3deg)">
+<div style="display:flex;gap:10px;width:max-content;animation:kmarq 34s linear infinite">
+<img src="img/latte-pour.jpg" alt="" loading="lazy" style="flex:none;width:140px;height:170px;object-fit:cover;border-radius:16px"><img src="img/ig-solje.jpg" alt="" loading="lazy" style="flex:none;width:140px;height:170px;object-fit:cover;border-radius:16px"><img src="img/ig-peciva.jpg" alt="" loading="lazy" style="flex:none;width:140px;height:170px;object-fit:cover;border-radius:16px"><img src="img/ig-limunada.jpg" alt="" loading="lazy" style="flex:none;width:140px;height:170px;object-fit:cover;border-radius:16px"><img src="img/ig-mural.jpg" alt="" loading="lazy" style="flex:none;width:140px;height:170px;object-fit:cover;border-radius:16px"><img src="img/ig-iced.jpg" alt="" loading="lazy" style="flex:none;width:140px;height:170px;object-fit:cover;border-radius:16px"><img src="img/latte-pour.jpg" alt="" loading="lazy" style="flex:none;width:140px;height:170px;object-fit:cover;border-radius:16px"><img src="img/ig-solje.jpg" alt="" loading="lazy" style="flex:none;width:140px;height:170px;object-fit:cover;border-radius:16px"><img src="img/ig-peciva.jpg" alt="" loading="lazy" style="flex:none;width:140px;height:170px;object-fit:cover;border-radius:16px"><img src="img/ig-limunada.jpg" alt="" loading="lazy" style="flex:none;width:140px;height:170px;object-fit:cover;border-radius:16px"><img src="img/ig-mural.jpg" alt="" loading="lazy" style="flex:none;width:140px;height:170px;object-fit:cover;border-radius:16px"><img src="img/ig-iced.jpg" alt="" loading="lazy" style="flex:none;width:140px;height:170px;object-fit:cover;border-radius:16px">
+</div>
+<div style="display:flex;gap:10px;width:max-content;animation:kmarqR 38s linear infinite">
+<img src="img/ig-izlog.jpg" alt="" loading="lazy" style="flex:none;width:140px;height:170px;object-fit:cover;border-radius:16px"><img src="img/ig-matcha.jpg" alt="" loading="lazy" style="flex:none;width:140px;height:170px;object-fit:cover;border-radius:16px"><img src="img/ig-za-poneti.jpg" alt="" loading="lazy" style="flex:none;width:140px;height:170px;object-fit:cover;border-radius:16px"><img src="img/ig-tiramisu.jpg" alt="" loading="lazy" style="flex:none;width:140px;height:170px;object-fit:cover;border-radius:16px"><img src="img/ig-casa.jpg" alt="" loading="lazy" style="flex:none;width:140px;height:170px;object-fit:cover;border-radius:16px"><img src="img/ig-ruke.jpg" alt="" loading="lazy" style="flex:none;width:140px;height:170px;object-fit:cover;border-radius:16px"><img src="img/ig-izlog.jpg" alt="" loading="lazy" style="flex:none;width:140px;height:170px;object-fit:cover;border-radius:16px"><img src="img/ig-matcha.jpg" alt="" loading="lazy" style="flex:none;width:140px;height:170px;object-fit:cover;border-radius:16px"><img src="img/ig-za-poneti.jpg" alt="" loading="lazy" style="flex:none;width:140px;height:170px;object-fit:cover;border-radius:16px"><img src="img/ig-tiramisu.jpg" alt="" loading="lazy" style="flex:none;width:140px;height:170px;object-fit:cover;border-radius:16px"><img src="img/ig-casa.jpg" alt="" loading="lazy" style="flex:none;width:140px;height:170px;object-fit:cover;border-radius:16px"><img src="img/ig-ruke.jpg" alt="" loading="lazy" style="flex:none;width:140px;height:170px;object-fit:cover;border-radius:16px">
+</div>
+</div>
+</section>
+
+<section id="faq" style="background:#FFF8E8;padding:20px 18px 44px">
+<div data-reveal="" style="text-align:center;font:800 46px/0.88 'Barlow Condensed','Fira Sans Extra Condensed';text-transform:uppercase;padding-top:20px">Pitate nas</div>
+<div id="faqList" style="display:flex;flex-direction:column;gap:8px;margin-top:18px">
+<div style="display:flex;flex-direction:column"><button type="button" aria-expanded="true" style="display:flex;align-items:center;gap:10px;padding:13px 16px;background:#602D22;color:#FFF8E8;border:0;border-radius:99px;cursor:pointer;font:inherit;text-align:left;width:100%"><span style="font-family:'Material Symbols Rounded';font-size:20px;color:#BBDD80">water_drop</span><span style="flex:1;font:600 15px Barlow">Imate li biljno mleko?</span><span data-chev="" style="font-family:'Material Symbols Rounded';font-size:22px;transition:transform .25s;transform:rotate(180deg)">expand_more</span></button><div data-ans="" style="display:grid;grid-template-rows:1fr;opacity:1;transition:grid-template-rows .45s cubic-bezier(.2,.7,.2,1),opacity .35s ease"><div style="overflow:hidden;min-height:0"><div style="padding:12px 18px 6px;font:500 15px/1.4 Barlow">Da: bademovo, sojino, graškovo i ovseno. Dodatak je 80 din.</div></div></div></div>
+<div style="display:flex;flex-direction:column"><button type="button" aria-expanded="false" style="display:flex;align-items:center;gap:10px;padding:13px 16px;background:#602D22;color:#FFF8E8;border:0;border-radius:99px;cursor:pointer;font:inherit;text-align:left;width:100%"><span style="font-family:'Material Symbols Rounded';font-size:20px;color:#BBDD80">pets</span><span style="flex:1;font:600 15px Barlow">Mogu li da dođem sa psom?</span><span data-chev="" style="font-family:'Material Symbols Rounded';font-size:22px;transition:transform .25s;transform:none">expand_more</span></button><div data-ans="" style="display:grid;grid-template-rows:0fr;opacity:0;transition:grid-template-rows .45s cubic-bezier(.2,.7,.2,1),opacity .35s ease"><div style="overflow:hidden;min-height:0"><div style="padding:12px 18px 6px;font:500 15px/1.4 Barlow">Naravno. Obe lokacije su pet-friendly.</div></div></div></div>
+<div style="display:flex;flex-direction:column"><button type="button" aria-expanded="false" style="display:flex;align-items:center;gap:10px;padding:13px 16px;background:#602D22;color:#FFF8E8;border:0;border-radius:99px;cursor:pointer;font:inherit;text-align:left;width:100%"><span style="font-family:'Material Symbols Rounded';font-size:20px;color:#BBDD80">wifi</span><span style="flex:1;font:600 15px Barlow">Ima li Wi-Fi? Mogu li da radim?</span><span data-chev="" style="font-family:'Material Symbols Rounded';font-size:22px;transition:transform .25s;transform:none">expand_more</span></button><div data-ans="" style="display:grid;grid-template-rows:0fr;opacity:0;transition:grid-template-rows .45s cubic-bezier(.2,.7,.2,1),opacity .35s ease"><div style="overflow:hidden;min-height:0"><div style="padding:12px 18px 6px;font:500 15px/1.4 Barlow">Ima. Laptop je dobrodošao na obe lokacije.</div></div></div></div>
+<div style="display:flex;flex-direction:column"><button type="button" aria-expanded="false" style="display:flex;align-items:center;gap:10px;padding:13px 16px;background:#602D22;color:#FFF8E8;border:0;border-radius:99px;cursor:pointer;font:inherit;text-align:left;width:100%"><span style="font-family:'Material Symbols Rounded';font-size:20px;color:#BBDD80">local_parking</span><span style="flex:1;font:600 15px Barlow">Gde da parkiram?</span><span data-chev="" style="font-family:'Material Symbols Rounded';font-size:22px;transition:transform .25s;transform:none">expand_more</span></button><div data-ans="" style="display:grid;grid-template-rows:0fr;opacity:0;transition:grid-template-rows .45s cubic-bezier(.2,.7,.2,1),opacity .35s ease"><div style="overflow:hidden;min-height:0"><div style="padding:12px 18px 6px;font:500 15px/1.4 Barlow">Parking je dostupan u okolnim ulicama obe lokacije.</div></div></div></div>
+<div style="display:flex;flex-direction:column"><button type="button" aria-expanded="false" style="display:flex;align-items:center;gap:10px;padding:13px 16px;background:#602D22;color:#FFF8E8;border:0;border-radius:99px;cursor:pointer;font:inherit;text-align:left;width:100%"><span style="font-family:'Material Symbols Rounded';font-size:20px;color:#BBDD80">takeout_dining</span><span style="flex:1;font:600 15px Barlow">Može li kafa za poneti?</span><span data-chev="" style="font-family:'Material Symbols Rounded';font-size:22px;transition:transform .25s;transform:none">expand_more</span></button><div data-ans="" style="display:grid;grid-template-rows:0fr;opacity:0;transition:grid-template-rows .45s cubic-bezier(.2,.7,.2,1),opacity .35s ease"><div style="overflow:hidden;min-height:0"><div style="padding:12px 18px 6px;font:500 15px/1.4 Barlow">Može. Sve sa menija spremamo i za poneti.</div></div></div></div>
+</div>
+<div style="display:flex;flex-direction:column;align-items:center;gap:8px;margin-top:20px"><span style="font:500 14px Barlow">Imaš još pitanja?</span><a href="tel:+381648762238" style="padding:11px 22px;background:#BBDD80;color:#602D22;border-radius:99px;font:700 15px Barlow;text-decoration:none">Pozovi nas</a></div>
+</section>
+
+<footer id="kontakt" style="background:#602D22;color:#FFF8E8;padding:36px 18px 0;overflow:hidden;container-type:inline-size">
+<div style="display:flex;justify-content:space-between;align-items:center">
+<img loading="lazy" decoding="async" src="img/logo-cream.png" alt="House of KOФI" style="width:110px;height:84px;object-fit:cover;display:block">
+<div style="display:flex;gap:8px">
+<a href="https://www.instagram.com/houseof.kofi/" target="_blank" rel="noopener" style="width:46px;height:46px;border-radius:50%;background:#FFF8E8;color:#602D22;display:flex;align-items:center;justify-content:center;text-decoration:none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#602D22" style="stroke-width:2;display:block;flex:none"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4.2"></circle><circle cx="17.4" cy="6.6" r="1.1" fill="#602D22" stroke="none"></circle></svg></a>
+<a href="tel:+381648762238" style="width:46px;height:46px;border-radius:50%;background:#FFF8E8;color:#602D22;display:flex;align-items:center;justify-content:center;text-decoration:none"><span style="font-family:'Material Symbols Rounded';font-size:22px">call</span></a>
+<a href="mailto:kofiablok@gmail.com" style="width:46px;height:46px;border-radius:50%;background:#FFF8E8;color:#602D22;display:flex;align-items:center;justify-content:center;text-decoration:none"><span style="font-family:'Material Symbols Rounded';font-size:22px">mail</span></a>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:6px;margin-top:22px;font:500 15px Barlow">
+<span>Uroša Martinovića 15</span><span>Luke Ćelovića Trebinjca 19</span><span>Svaki dan 07–23h</span>
+</div>
+<div style="display:flex;flex-direction:column;gap:4px;margin-top:16px;font:600 15px Barlow"><a href="tel:+381648762238" style="color:#FFF8E8;text-decoration:underline;text-underline-offset:3px">064 876 2238</a><a href="mailto:kofiablok@gmail.com" style="color:#FFF8E8;text-decoration:underline;text-underline-offset:3px">kofiablok@gmail.com</a></div>
+<div style="font:800 43cqw/0.78 'Barlow Condensed','Fira Sans Extra Condensed';color:#FFF8E8;margin:28px -18px -0.08em;text-align:center;white-space:nowrap;letter-spacing:-0.02em">КОФИ</div>
+</footer>
+
+
+<div id="nav" hidden style="position:fixed;inset:0;z-index:50;background:#602D22;color:#FFF8E8">
+<div style="max-width:440px;margin:0 auto;padding:14px 18px;box-sizing:border-box;display:flex;flex-direction:column;height:100%">
+<div style="display:flex;justify-content:space-between;align-items:center">
+<img loading="lazy" decoding="async" src="img/logo-cream.png" alt="House of KOФI" style="width:76px;height:58px;object-fit:cover;display:block">
+<button type="button" id="navClose" aria-label="Zatvori meni" style="background:none;border:0;color:inherit;font-family:'Material Symbols Rounded';font-size:32px;cursor:pointer;padding:6px;margin:-6px">close</button>
+</div>
+<div style="display:flex;flex-direction:column;gap:4px;margin-top:36px">
+<a class="navlink" href="#o-nama" style="font:800 44px/1.05 'Barlow Condensed','Fira Sans Extra Condensed';text-transform:uppercase;color:#FFF8E8;text-decoration:none">O nama</a>
+<a class="navlink" href="#utisci" style="font:800 44px/1.05 'Barlow Condensed','Fira Sans Extra Condensed';text-transform:uppercase;color:#FFF8E8;text-decoration:none">Utisci</a>
+<a class="navlink" href="#blend" style="font:800 44px/1.05 'Barlow Condensed','Fira Sans Extra Condensed';text-transform:uppercase;color:#FFF8E8;text-decoration:none">Naš blend</a>
+<a class="navlink" href="#meni" style="font:800 44px/1.05 'Barlow Condensed','Fira Sans Extra Condensed';text-transform:uppercase;color:#FFF8E8;text-decoration:none">Meni</a>
+<a class="navlink" href="#hrana" style="font:800 44px/1.05 'Barlow Condensed','Fira Sans Extra Condensed';text-transform:uppercase;color:#FFF8E8;text-decoration:none">Uz kafu</a>
+<a class="navlink" href="#lokacije" style="font:800 44px/1.05 'Barlow Condensed','Fira Sans Extra Condensed';text-transform:uppercase;color:#FFF8E8;text-decoration:none">Lokacije</a>
+<a class="navlink" href="#faq" style="font:800 44px/1.05 'Barlow Condensed','Fira Sans Extra Condensed';text-transform:uppercase;color:#FFF8E8;text-decoration:none">FAQ</a>
+<a class="navlink" href="#kontakt" style="font:800 44px/1.05 'Barlow Condensed','Fira Sans Extra Condensed';text-transform:uppercase;color:#FFF8E8;text-decoration:none">Kontakt</a>
+</div>
+<div style="margin-top:auto;padding-bottom:20px;display:flex;flex-direction:column;gap:4px;font:600 15px Barlow"><span style="font:700 22px/1 Caveat;color:#BBDD80">svaki dan 07–23h</span><span>064 876 2238</span></div>
+</div>
+</div>
+
+
+</div>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script>
+(function(){
+var $=function(s){return document.querySelector(s)},$$=function(s,r){return [].slice.call((r||document).querySelectorAll(s))};
+var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches,lenis=null;
+if(window.Lenis&&!reduce){lenis=new Lenis({duration:1.15,anchors:true,easing:function(t){return Math.min(1,1.001-Math.pow(2,-10*t))}});(function raf(t){lenis.raf(t);requestAnimationFrame(raf)})(0);}
+var nav=$('#nav');
+function setNav(o){nav.hidden=!o;if(lenis)o?lenis.stop():lenis.start();else document.documentElement.style.overflow=o?'hidden':'';}
+$('#navOpen').onclick=function(){setNav(true)};$('#navClose').onclick=function(){setNav(false)};
+nav.addEventListener('click',function(e){if(e.target.closest('a'))setNav(false)});
+addEventListener('keydown',function(e){if(e.key==='Escape'&&!nav.hidden)setNav(false)});
+$('#menuTabs').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;
+$$('#menuTabs button').forEach(function(x){var on=x===b;x.style.background=on?'#602D22':'transparent';x.style.color=on?'#FFF8E8':'#602D22';x.setAttribute('aria-selected',on)});
+$$('[data-panel]').forEach(function(p){var on=p.dataset.panel===b.dataset.i;p.hidden=!on;p.style.display=on?'flex':'none'})});
+$('#locTabs').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;
+$$('#locTabs button').forEach(function(x){var on=x===b;x.style.background=on?'#602D22':'#FFF8E8';x.style.color=on?'#FFF8E8':'#602D22';x.setAttribute('aria-pressed',on)});
+var d=b.dataset;if($('#locMap').src!==d.map)$('#locMap').src=d.map;$('#locName').textContent=d.name;$('#locNote').textContent=d.note;$('#locNav').href=d.nav});
+$('#faqList').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;var open=b.getAttribute('aria-expanded')!=='true';
+$$('#faqList button').forEach(function(x){var on=x===b&&open,a=x.nextElementSibling;x.setAttribute('aria-expanded',on);x.querySelector('[data-chev]').style.transform=on?'rotate(180deg)':'none';a.style.gridTemplateRows=on?'1fr':'0fr';a.style.opacity=on?1:0})});
+if('IntersectionObserver' in window&&!reduce){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.style.opacity=1;e.target.style.transform='none';io.unobserve(e.target)}})},{threshold:.15});
+$$('[data-reveal]').forEach(function(el){if(el.getBoundingClientRect().top>innerHeight){el.style.opacity=0;el.style.transform='translateY(28px)';el.style.transition='opacity .7s ease, transform .7s cubic-bezier(.2,.7,.2,1)'}io.observe(el)})}
+})();
+</script>
+</body>
+</html>
